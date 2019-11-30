@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellowWhie"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="첫번째버튼"
+
+    <Button
+        android:id="@+id/btn_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="두번째버튼"
+
+
+    <Button
+        android:id="@+id/btn_third"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btn_first"
+        android:layout_above="@id/btn_second"
+        android:layout_height="match_parent"
+        android:text="세번째버튼"
+
+
+</RelativeLayout>

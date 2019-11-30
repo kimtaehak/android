@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- CoordinatorLayout > AppBarLayout > Toolbar, Tabbar -->
+        <!-- CoordinatorLayout 안에 AppBarLayout을 넣으면 스크롤에 따른 view의 모양을 변화시킬 수 있다-->
+        <include layout="@layout/toolbar_main" />
+
+        <!-- TabLayout 추가 -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <!-- ViewPager 추가 -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigationview_header"
+        app:menu="@menu/drawer_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a" />
+
+    <!--좋아요-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_favorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_favorite"
+            android:text="1,234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <!--선-->
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <!--댓글-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="ssarmango"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_toRightOf="@+id/tv_username"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="불꽃놀이했어요!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

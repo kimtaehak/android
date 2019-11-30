@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pro_pic_1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/propic1"
+        app:civ_border_color="@android:color/darker_gray"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/pro_pic_1"
+        android:text="tahkim"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:src="@drawable/ic_dots"
+        android:tint="@android:color/darker_gray" />
+</RelativeLayout>
+
+<ImageView
+android:layout_height="300dp"
+android:layout_width="match_parent"
+android:scaleType="centerCrop"
+android:src="@drawable/postpic1" />
+
+<RelativeLayout
+android:background="@android:color/white"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<ImageView
+    android:id="@+id/iv_like"
+    android:layout_alignParentLeft="true"
+    android:layout_height="30dp"
+    android:layout_margin="10dp"
+    android:layout_width="30dp"
+    android:src="@drawable/like" />
+
+<ImageView
+    android:id="@+id/iv_chat"
+    android:layout_height="30dp"
+    android:layout_margin="10dp"
+    android:layout_toRightOf="@id/iv_like"
+    android:layout_width="30dp"
+    android:src="@drawable/chat_bubble" />
+
+<ImageView
+    android:id="@+id/iv_send"
+    android:layout_height="30dp"
+    android:layout_margin="10dp"
+    android:layout_toRightOf="@id/iv_chat"
+    android:layout_width="30dp"
+    android:src="@drawable/send" />
+
+<ImageView
+    android:id="@+id/iv_bookmark"
+    android:layout_alignParentRight="true"
+    android:layout_height="30dp"
+    android:layout_margin="10dp"
+    android:layout_width="30dp"
+    android:src="@drawable/bookmark" />
+
+</RelativeLayout><!--    좋아요 리스트-->
+    <!--    댓글 작성한 목록-->
+    <!--글쓰지 input    -->
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_marginRight="10dp"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="홍길동"
+            android:textSize="25dp" />
+
+        <TextView
+        android:id="@+id/tvPhone"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="010-2222-1111"
+        android:textSize="25dp"     />
+
+    </LinearLayout>
+
+</LinearLayout>
+
